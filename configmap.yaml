@@ -1,0 +1,9 @@
+# configmap.yaml
+## Create a new file called configmap.yaml in the templates directory with the following content:
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-configmap
+data:
+  index.html: {{ .Values.nginx.indexHTML | indent 4 }}
+

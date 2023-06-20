@@ -1,0 +1,12 @@
+# values.yaml
+nginx:
+  image: nginx:latest
+  port: 80
+  replicaCount: 1
+  indexHTML: |
+    <html>
+    <body>
+      <h1>Hello, World!</h1>
+    </body>
+    </html>
+
